@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<!--
+	THuộc tính html
+	-a:the lien kết
+		cú pháp: <a href="dường dẫn liên kết">Text</a>
+		-dường dẫn liên kết tương đối: là đường dẫn bên trong thư mục chứa website
+		đường dẫn tuyệt đối:là đường dẫn có chứa protocol :https dugnf trong đăng nhập, đăng xuất/http:
+		- một số khái niệm về cáp
+			- ngang cấp: các file nằm cùng vì trí với nhau, có nghĩa là nhìn thấy file này cũng nhìn thấy file kia
+			- cấp con file a1.html là cấp con của file index.html, có nghĩa là file a1 nằm bên trong 1 hay nhiều thư mục nào đó. Để reuy cập vào cấp con:tenfolder/tènile
+			- cấp cha:file index.htmlgoij là cấp cha của file a1.html.Để truy cập lên cấp cha sử dụng ký hiệu ../(moi../sẽ nhẩy lên 1 cấp)
+		- Thuộc tính target="_blank" sẽ mở ra một tab mới khi click vào link
+	- img:load ảnh lên website
+		<img src="đường dẫn ảnh">
+		- Nếu chỉ fix đọ cao rrongj sẽ được tự đọng căn chỉnh theo tương ứng và ngược lại
+	- ul: thẻ danh sách
+		- li: list danh sách
+	- ol: thẻ sanh sách, các list danh sách sẽ bắ đầu từ 1-
+	- Table:bảng trong html
+		- Bảng sẽ bao gồm các hàng (tr), các côt (td)
+		- Hàng 1 có bao nhiêu cột thì các hàng khác cùng có bấy nhiêu cột ttuonwg ứng
+		- Một số thuộc tính của table:
+			- cellpading:số -> khoảng cách từ đường viền đến đầu chữ
+			- cellspacing:số -> độ rộng của cường đường viền bên trong
+			- border: số -> độ rộng của đường viền
+	- Một số thẻ html5(về nguyên lý giống thẻ div)
+		-header, aside, article, content, footer
+	- Một số thẻ form
+		- textbox, radio, checkbox, select, area, file, color, date, number, email...
+THuộc tính css:
+	- Một số cách tác động sử dụng css của thẻ html
+		- Là 1 thuộc tính bên trong thẻ html (có tên:style)-> chỉ tác động được vào đúng thẻ html đó, không tác đọng được nhiều thể html
+		- Tác động được nhiều thẻ html thông qua thuộc tính beent rong thẻ html có tên:id, class
+			- Tác động qua thuộc tính id: #teenid{css}
+			- Tác động qua thuộc tính class: .tenclass{css}
+			- Tác động vào thẻ html, chỉ cần ghi tên thẻ . VD:tenthe{css}
+			- các cách tác động này sẽ đặt trong thẻ <style></style>
+		- ghi chú trong css: sử dụng ký hiệu /* các dòng ghi chú */
+		- height:độ cao ->xác lập độ cao
+		-line-height:docao -> xac lap do cao
+		-background-image:url(đường dẫn ảnh)->xác lập ảnh nền, mặc định ảnh sẽ lập theo chiều ngang và chiều đứng
+			- background-repeat:repeat-x -> ảnh chị lặp theo chiều ngang
+			- background- repeat:repeat-y -> ảnh chỉ lặp theo chiều dọc
+			- background-repeat:no-repeat: ảnh không lặp
+			- background-size:dorong-chieungang dorong-chieudoc -> căn chỉnh độ rộng, độ dìa của ảnh
+			-background-size:dorong -> căn chỉnh cả độ rộng, độ cao của ảnh
+		-margin:khoảng cách từ thẻ html nhìn ra bên goài
+			- margin: 12h 3h 6h 9h -> đẩy thẻ html theo từng vị trí
+			- margin: trenduoi traipha -> đẩy thẻ html theo các cặp vị trí
+			- margin:tat-ca-cac-vi-tri -> đẩy hter html theo tất cả các vị trí
+			- margin-top:dorong -> đẩy trên, tương tự như margin-right, left,bottom
+		-padding:khoảng cách từ thẻ html đẩy vào bên trong, các thành phần giống với margin
+	-->
+	<style type="text/css">
+		/*Tác động vào thuộc tính class=txt1*/
+		.txt1 {
+			text-decoration: underline;
+			color: #ccc;
+		}
+		/*tác đọng thuộc tính id=txt2*/
+		#txt2 {
+			font-style: italic;
+			color:green;
+		}
+		/*tác động vào thẻ div*/
+		div{text-decoration: underline;}
+		/*bỏ daauss gạch chân của thẻ a*/
+		/*muốn tác động vòa đúng thẻ html cần tác động, phải tác đọng từ cấp cha của nó*/
+		/*thuộc tính !important sẽ ưu tiên thuộc tính này khi có sử dụng ở các thuộc tính*/
+	</style>
+<body>
+<h1><a href="test1.html">Liên kết đến trang test1.html</a></h1>
+<h1><a href="a/a1.html">Liên kết đến trang a1.html</a></h1>
+<h1>
+	<img src="images/anh.jpg" style="width:300px"/>
+</h1>
+<ul>
+	<li>Danh sách 1</li>
+	<li>Danh sách 2</li>
+	<li>Danh sách 3</li>
+</ul>
+<ol>
+	<li>Danh sách 1</li>
+	<li>Danh sách 2</li>
+	<li>Danh sách 3</li>
+</ol>
+
+<table border=1>
+	<tr>
+		<td>Hàng 1 cột 1</td><td>Hàng 1 cột 2</td><td>Hàng 1 cột 3</td>
+	</tr>
+	<tr>
+		<td>Hàng 2 cột 1</td><td>Hàng 2 cột 2</td><td>Hàng 2 cột 3</td>
+	</tr>
+	<tr>
+		<td>Hàng 3 cột 1</td><td>Hàng 3 cột 2</td><td>Hàng 3 cột 3</td>
+	</tr>
+</table>
+<table cellpadding="5">
+	<tr>
+		<td>Textbox</td><td><input type="Text" placeholder="Nhập thông tin"></td>
+	</tr>
+	<tr>
+			<!-- radio có cùng name thì tích radio sẽ mất tích radio kia-->
+		<td>Radio</td><td><input checked type="Radio" name="rdo">Radio1<input type="radio" name="rdo">Radio2</td>
+	</tr>
+	<tr>
+		<td>Checkbox</td><td><input type="Checkbox"></td>
+	</tr>
+	<tr>
+		<td>Select</td>
+		<td>
+			<select>
+				<option>Select1</option>
+				<option>Select2</option>
+			</select>
+		</td>
+	</tr>
+
+	<tr>
+		<td>color</td><td><input type="color"></td>
+	</tr>
+	<tr>
+		<td>file</td><td><input type="file"></td>
+	</tr>
+	<tr>
+		<td>textarea</td><td><textarea></textarea></td>
+	</tr>
+</table>
+<h1 class="txt1">Hello world</h1>
+<h1 id="txt2">Hôm nay là thứ 5</h1>
+<p class="txt1">PHP33</p>
+<p id="txt2">Hello</p>
+<div>Tomorow 6</div>
+<h1>Who are you</h1>
+</body>
+</html>

@@ -1,0 +1,21 @@
+*{
+	padding: 0;
+	margin: 0 auto;
+}
+#wapper {
+	width: 600px;
+	margin: 0 auto;
+	background-color: #a06d21;
+	color: #fff;
+}
+h1 {
+	text-align: center;
+	color: #ffcc00;
+}
+aside {
+	padding: 10px;
+	background-image: url("../images/g.jpg") center center no-repeat;
+}
+aside p {
+	text-align: justify;
+}

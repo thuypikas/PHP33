@@ -1,0 +1,16 @@
+*{
+	padding: 0;
+	margin: 0 auto;
+}
+body {
+	width: 500px;
+}
+h1 {
+	text-align: center;
+}
+h2 {
+	text-decoration:underline;
+}
+div {
+	text-align: center;
+}

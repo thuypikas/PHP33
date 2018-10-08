@@ -1,0 +1,41 @@
+*{
+	padding: 0;
+	margin: 0 auto;
+}
+body {
+	width: 600px;
+	margin: 0 auto;
+}
+h1, header {
+	text-align: center;
+}
+.in-dam{
+	font-weight: bold;
+}
+h2 {
+	color: #0000FF;
+	text-decoration: underline;
+}
+header {
+	background-color: #FECFFD;
+	color: #ff3399;
+	font-size: 20px;
+}
+aside {
+	background-color: #ffffcc;
+}
+h1, .txt3 {
+	color: #006600;
+	text-align: center;
+}
+.txt1 {
+	text-align: center;
+	color: #0000FF;
+}
+.txt2 {
+	text-align: center;
+	color: red;
+}
+hr {
+	width: 190px;
+}
